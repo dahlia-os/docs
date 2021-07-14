@@ -1,0 +1,439 @@
+<!doctype html>
+<!---
+Copyright 2019 The dahliaOS Authors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/default.min.css">
+  <link rel="stylesheet" href="https://docs.dahliaos.io/atom-one-dark.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+  <script>
+  hljs.highlightAll();
+  </script>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="canonical" href="https://dahliaos.io">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Add to home screen for Safari on iOS -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#ff3d00">
+   <meta name="apple-mobile-web-app-title" content="dahliaOS">
+   <link rel="apple-touch-icon" href="https://dahliaos.io/assets/img/favicon.png">
+   <meta name="msapplication-TileImage" content="https://dahliaos.io/assets/img/favicon.png">
+   <meta name="msapplication-TileColor" content="#ff3d00">
+   <meta name="theme-color" content="#ff3d00">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+   <link rel="icon" type="image/png" href="https://dahliaos.io/assets/img/favicon.png">
+   <title>The Apache License | dahliaOS - Documentation</title>
+   <meta name="description" content="The Apache License">
+   <meta property="og:image" content="https://dahliaos.io/assets/img/favicon.png">
+   
+   <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script><!-- Page styles -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://dahliaos.io/assets/css/dahlia.css?v=1.3">
+   <link rel="stylesheet" href="https://dahliaos.io/assets/css/styles.css?v=1.3">
+   <link rel="stylesheet" href="https://dahliaos.io/assets/css/custom.css?v=1.3">
+   <link rel="stylesheet" href="/css/styles.css?v=1.0">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body data-dahliaOS-site="docs">
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <div class="dahliaOS-header mdl-layout__header mdl-layout__header--fixed" style="position: fixed;">
+        <div class="mdl-layout__header-row" id="firstHeaderRow">
+          <span class="dahliaOS-title mdl-layout-title"><a href="/"><img class="android-logo-image" src="https://dahliaos.io/assets/img/logo-color.png" alt="logo-color"></a></span> <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="dahliaOS-header-spacer mdl-layout-spacer"></div>
+          <div class="dahliaOS-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field"><i class="material-icons">search</i></label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div><!-- Navigation -->
+          <div class="dahliaOS-navigation-container">
+            <nav class="dahliaOS-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://dahliaos.io/#features">Features</a> <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://dahliaos.io/#screens">News</a> <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://dahliaos.io/downloads">Download</a> <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://web.dahliaos.io" target="_blank">Demo</a> <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://github.com/orgs/dahliaos/people" target="_blank">Developers</a> <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://docs.dahliaos.io">Documentation</a>
+            </nav>
+          </div><span class="dahliaOS-mobile-title mdl-layout-title"><a href="https://dahliaos.io/"><img class="android-logo-image" src="https://dahliaos.io/assets/img/logo-color.png" alt="logo-color"></a></span> <button class="dahliaOS-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button"><i class="material-icons">more_vert</i></button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <a href="https://dahliaos.io/github" target="_blank" style="text-decoration: none;"></a>
+            <li class="mdl-menu__item">Source Code</li><a href="https://dahliaos.io/login" style="text-decoration: none;"></a>
+            <li class="mdl-menu__item">Team Login</li>
+            <li disabled class="mdl-menu__item">Screenshots</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="dahliaOS-drawer mdl-layout__drawer dahliaOS-docs-sidebar">
+        <!-- <span class="mdl-layout-title"><a href="https://dahliaos.io/"><img class="android-logo-image" src="https://dahliaos.io/assets/img/logo-white.png" alt="logo-white"></a></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="https://dahliaos.io/#features">Features</a> <a class="mdl-navigation__link" href="https://dahliaos.io/#screens">News</a> <a class="mdl-navigation__link" href="https://dahliaos.io/downloads">Download</a> <a class="mdl-navigation__link" href="mailto:contact@dahliaos.io" target="_blank">Contact</a> <a class="mdl-navigation__link" href="https://github.com/orgs/dahliaOS/people" target="_blank">Developers</a> <a class="mdl-navigation__link" href="https://dahliaos.io/docs" target="_blank">Documentation</a>
+          <div class="dahliaOS-drawer-separator"></div><span class="mdl-navigation__link" href="">Find us on</span> <a class="mdl-navigation__link" href="https://dahliaos.io/discord" target="_blank">Discord</a> <a class="mdl-navigation__link" href="https://dahliaos.io/github" target="_blank">Github</a> <a class="mdl-navigation__link" href="https://dahliaos.io/reddit" target="_blank">Reddit</a> <a class="mdl-navigation__link" href="https://dahliaos.io/telegram" target="_blank">Telegram</a> <a class="mdl-navigation__link" href="https://dahliaos.io/facebook" target="_blank">Facebook</a> <a class="mdl-navigation__link" href="https://dahliaos.io/instagram" target="_blank">Instagram</a> <a class="mdl-navigation__link" href="https://dahliaos.io/twitter" target="_blank">Twitter</a>
+          <div class="dahliaOS-drawer-separator"></div><span class="mdl-navigation__link" href="">For developers</span> <a class="mdl-navigation__link" href="https://dahliaos.io/github" target="_blank">Source Code</a> <a class="mdl-navigation__link" href="https://dahliaos.io/discord" target="_blank">Join Our Team</a>
+        </nav> -->
+        
+<ul>
+<li>
+<p>Getting started</p>
+<ul>
+<li><a href="/">Overview</a></li>
+</ul>
+</li>
+<li>
+<p>Install</p>
+<ul>
+<li><a href="/install/efi">64BIT UEFI</a></li>
+<li><a href="/install/legacy">64BIT BIOS</a></li>
+<li><a href="/install/QEMU-cli">QEMU (cli)</a></li>
+<li><a href="/install/QEMU-gui">QEMU (gui)</a></li>
+<li><a href="/install/virtualbox">VirtualBox</a></li>
+</ul>
+</li>
+<li>
+<p>Hardware</p>
+<ul>
+<li><a href="/hardware/support">Supported Devices</a></li>
+</ul>
+</li>
+<li>
+<p>OS</p>
+<ul>
+<li><a href="/os/linux">Linux Based</a></li>
+<li><a href="/os/fimage">Zircon Based (FImage)</a></li>
+</ul>
+</li>
+<li>
+<p>Pangolin</p>
+<ul>
+<li><a href="/pangolin/pangolin-linux">Pangolin on Linux</a></li>
+<li><a href="/pangolin/pangolin">Pangolin Desktop</a></li>
+</ul>
+</li>
+<li>
+<p>Build</p>
+<ul>
+<li><a href="/build/buildroot">Buildroot</a></li>
+</ul>
+</li>
+<li>
+<p>Developers</p>
+<ul>
+<li><a href="/developer/fimage-setup">Setting up FImage for Application Development</a></li>
+<li><a href="/developer/flutter-fuchsia">Running a Flutter App on Fuchsia with FImage</a></li>
+<li><a href="/developer/packaging">Packaging</a></li>
+<li><a href="/developer/submitting">Submitting</a></li>
+<li><a href="/developer/roadmap">Roadmap</a></li>
+</ul>
+</li>
+<li>
+<p>Contribute</p>
+<ul>
+<li><a href="/contribute/contributing">Contributing</a></li>
+<li><a href="/contribute/conduct">Code of Conduct</a></li>
+</ul>
+</li>
+<li>
+<p>License</p>
+<ul>
+<li><a href="/license/LICENSE">License</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+      
+      <main class="demo-main mdl-layout__content">
+        
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--3-col dahliaOS-docs-sidebar mdl-cell--hide-tablet mdl-cell--hide-phone" data-docs-visible="true">
+            
+<ul>
+<li>
+<p>Getting started</p>
+<ul>
+<li><a href="/">Overview</a></li>
+</ul>
+</li>
+<li>
+<p>Install</p>
+<ul>
+<li><a href="/install/efi">64BIT UEFI</a></li>
+<li><a href="/install/legacy">64BIT BIOS</a></li>
+<li><a href="/install/QEMU-cli">QEMU (cli)</a></li>
+<li><a href="/install/QEMU-gui">QEMU (gui)</a></li>
+<li><a href="/install/virtualbox">VirtualBox</a></li>
+</ul>
+</li>
+<li>
+<p>Hardware</p>
+<ul>
+<li><a href="/hardware/support">Supported Devices</a></li>
+</ul>
+</li>
+<li>
+<p>OS</p>
+<ul>
+<li><a href="/os/linux">Linux Based</a></li>
+<li><a href="/os/fimage">Zircon Based (FImage)</a></li>
+</ul>
+</li>
+<li>
+<p>Pangolin</p>
+<ul>
+<li><a href="/pangolin/pangolin-linux">Pangolin on Linux</a></li>
+<li><a href="/pangolin/pangolin">Pangolin Desktop</a></li>
+</ul>
+</li>
+<li>
+<p>Build</p>
+<ul>
+<li><a href="/build/buildroot">Buildroot</a></li>
+</ul>
+</li>
+<li>
+<p>Developers</p>
+<ul>
+<li><a href="/developer/fimage-setup">Setting up FImage for Application Development</a></li>
+<li><a href="/developer/flutter-fuchsia">Running a Flutter App on Fuchsia with FImage</a></li>
+<li><a href="/developer/packaging">Packaging</a></li>
+<li><a href="/developer/submitting">Submitting</a></li>
+<li><a href="/developer/roadmap">Roadmap</a></li>
+</ul>
+</li>
+<li>
+<p>Contribute</p>
+<ul>
+<li><a href="/contribute/contributing">Contributing</a></li>
+<li><a href="/contribute/conduct">Code of Conduct</a></li>
+</ul>
+</li>
+<li>
+<p>License</p>
+<ul>
+<li><a href="/license/LICENSE">License</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+          <div class="mdl-cell mdl-cell--2-col replacement-cell mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <input type="checkbox" id="sidebar-hider" name="sidebar-hider"
+                onchange="dahliaOS__matchSidebar()" checked />
+              <label class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-tablet mdl-cell--hide-phone" for="sidebar-hider">
+                <i class="material-icons">list</i>
+              </label>
+              Documentation > License > The Apache License
+            </div>
+            <!--Header Content-->
+
+<h2>Apache License</h2>
+<p>==============</p>
+<p><em>Version 2.0, January 2004</em><br />
+<em>&lt;<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>&gt;</em></p>
+<h4>Terms and Conditions for use, reproduction, and distribution</h4>
+<h5>1. Definitions</h5>
+<p>“License” shall mean the terms and conditions for use, reproduction, and
+distribution as defined by Sections 1 through 9 of this document.</p>
+<p>“Licensor” shall mean the copyright owner or entity authorized by the copyright
+owner that is granting the License.</p>
+<p>“Legal Entity” shall mean the union of the acting entity and all other entities
+that control, are controlled by, or are under common control with that entity.
+For the purposes of this definition, “control” means <strong>(i)</strong> the power, direct or
+indirect, to cause the direction or management of such entity, whether by
+contract or otherwise, or <strong>(ii)</strong> ownership of fifty percent (50%) or more of the
+outstanding shares, or <strong>(iii)</strong> beneficial ownership of such entity.</p>
+<p>“You” (or “Your”) shall mean an individual or Legal Entity exercising
+permissions granted by this License.</p>
+<p>“Source” form shall mean the preferred form for making modifications, including
+but not limited to software source code, documentation source, and configuration
+files.</p>
+<p>“Object” form shall mean any form resulting from mechanical transformation or
+translation of a Source form, including but not limited to compiled object code,
+generated documentation, and conversions to other media types.</p>
+<p>“Work” shall mean the work of authorship, whether in Source or Object form, made
+available under the License, as indicated by a copyright notice that is included
+in or attached to the work (an example is provided in the Appendix below).</p>
+<p>“Derivative Works” shall mean any work, whether in Source or Object form, that
+is based on (or derived from) the Work and for which the editorial revisions,
+annotations, elaborations, or other modifications represent, as a whole, an
+original work of authorship. For the purposes of this License, Derivative Works
+shall not include works that remain separable from, or merely link (or bind by
+name) to the interfaces of, the Work and Derivative Works thereof.</p>
+<p>“Contribution” shall mean any work of authorship, including the original version
+of the Work and any modifications or additions to that Work or Derivative Works
+thereof, that is intentionally submitted to Licensor for inclusion in the Work
+by the copyright owner or by an individual or Legal Entity authorized to submit
+on behalf of the copyright owner. For the purposes of this definition,
+“submitted” means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems, and
+issue tracking systems that are managed by, or on behalf of, the Licensor for
+the purpose of discussing and improving the Work, but excluding communication
+that is conspicuously marked or otherwise designated in writing by the copyright
+owner as “Not a Contribution.”</p>
+<p>“Contributor” shall mean Licensor and any individual or Legal Entity on behalf
+of whom a Contribution has been received by Licensor and subsequently
+incorporated within the Work.</p>
+<h5>2. Grant of Copyright License</h5>
+<p>Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the Work and such
+Derivative Works in Source or Object form.</p>
+<h5>3. Grant of Patent License</h5>
+<p>Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable (except as stated in this section) patent license to make, have
+made, use, offer to sell, sell, import, and otherwise transfer the Work, where
+such license applies only to those patent claims licensable by such Contributor
+that are necessarily infringed by their Contribution(s) alone or by combination
+of their Contribution(s) with the Work to which such Contribution(s) was
+submitted. If You institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work or a
+Contribution incorporated within the Work constitutes direct or contributory
+patent infringement, then any patent licenses granted to You under this License
+for that Work shall terminate as of the date such litigation is filed.</p>
+<h5>4. Redistribution</h5>
+<p>You may reproduce and distribute copies of the Work or Derivative Works thereof
+in any medium, with or without modifications, and in Source or Object form,
+provided that You meet the following conditions:</p>
+<ul>
+<li><strong>(a)</strong> You must give any other recipients of the Work or Derivative Works a copy of
+this License; and</li>
+<li><strong>(b)</strong> You must cause any modified files to carry prominent notices stating that You
+changed the files; and</li>
+<li><strong>(c)</strong> You must retain, in the Source form of any Derivative Works that You distribute,
+all copyright, patent, trademark, and attribution notices from the Source form
+of the Work, excluding those notices that do not pertain to any part of the
+Derivative Works; and</li>
+<li><strong>(d)</strong> If the Work includes a “NOTICE” text file as part of its distribution, then any
+Derivative Works that You distribute must include a readable copy of the
+attribution notices contained within such NOTICE file, excluding those notices
+that do not pertain to any part of the Derivative Works, in at least one of the
+following places: within a NOTICE text file distributed as part of the
+Derivative Works; within the Source form or documentation, if provided along
+with the Derivative Works; or, within a display generated by the Derivative
+Works, if and wherever such third-party notices normally appear. The contents of
+the NOTICE file are for informational purposes only and do not modify the
+License. You may add Your own attribution notices within Derivative Works that
+You distribute, alongside or as an addendum to the NOTICE text from the Work,
+provided that such additional attribution notices cannot be construed as
+modifying the License.</li>
+</ul>
+<p>You may add Your own copyright statement to Your modifications and may provide
+additional or different license terms and conditions for use, reproduction, or
+distribution of Your modifications, or for any such Derivative Works as a whole,
+provided Your use, reproduction, and distribution of the Work otherwise complies
+with the conditions stated in this License.</p>
+<h5>5. Submission of Contributions</h5>
+<p>Unless You explicitly state otherwise, any Contribution intentionally submitted
+for inclusion in the Work by You to the Licensor shall be under the terms and
+conditions of this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify the terms of
+any separate license agreement you may have executed with Licensor regarding
+such Contributions.</p>
+<h5>6. Trademarks</h5>
+<p>This License does not grant permission to use the trade names, trademarks,
+service marks, or product names of the Licensor, except as required for
+reasonable and customary use in describing the origin of the Work and
+reproducing the content of the NOTICE file.</p>
+<h5>7. Disclaimer of Warranty</h5>
+<p>Unless required by applicable law or agreed to in writing, Licensor provides the
+Work (and each Contributor provides its Contributions) on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+including, without limitation, any warranties or conditions of TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are
+solely responsible for determining the appropriateness of using or
+redistributing the Work and assume any risks associated with Your exercise of
+permissions under this License.</p>
+<h5>8. Limitation of Liability</h5>
+<p>In no event and under no legal theory, whether in tort (including negligence),
+contract, or otherwise, unless required by applicable law (such as deliberate
+and grossly negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special, incidental,
+or consequential damages of any character arising as a result of this License or
+out of the use or inability to use the Work (including but not limited to
+damages for loss of goodwill, work stoppage, computer failure or malfunction, or
+any and all other commercial damages or losses), even if such Contributor has
+been advised of the possibility of such damages.</p>
+<h5>9. Accepting Warranty or Additional Liability</h5>
+<p>While redistributing the Work or Derivative Works thereof, You may choose to
+offer, and charge a fee for, acceptance of support, warranty, indemnity, or
+other liability obligations and/or rights consistent with this License. However,
+in accepting such obligations, You may act only on Your own behalf and on Your
+sole responsibility, not on behalf of any other Contributor, and only if You
+agree to indemnify, defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason of your
+accepting any such warranty or additional liability.</p>
+<p><em>END OF TERMS AND CONDITIONS</em></p>
+<h4>APPENDIX: How to apply the Apache License to your work</h4>
+<p>To apply the Apache License to your work, attach the following boilerplate
+notice, with the fields enclosed by brackets <code>[]</code> replaced with your own
+identifying information. (Don't include the brackets!) The text should be
+enclosed in the appropriate comment syntax for the file format. We also
+recommend that a file or class name and description of purpose be included on
+the same “printed page” as the copyright notice for easier identification within
+third-party archives.</p>
+<pre><code>Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+<!--Footer Content-->
+</div>
+          
+</div>
+<div class="dahliaOS-download-section-image"></div>
+<footer class="mdl-mini-footer" style="margin-top:0px;">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo"><img src="https://dahliaos.io/assets/img/logo-white.png" style="margin-top:-3px;" height="18.6666666667px"></div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="https://dahliaos.io">Home</a></li>
+      <li><a href="https://github.com/dahliaOS">Source Code</a></li>
+    </ul>
+  </div>
+</footer>
+</main>
+</div>
+<script src="https://dahliaos.io/assets/js/material.min.js"></script>
+<script src="/js/sidebar.js"></script>
+</div>
+<a href="https://github.com/dahliaOS/documentation/tree/main/docs/articles/license/LICENSE.md" target="_blank" id="view-source"
+class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="background-color: #ff3d00;"><i
+class="material-icons" style="color: #fff;">edit</i></a>
+</body>
+</html>
